@@ -28,11 +28,27 @@
     border: 1px outset #c1c1c1;
     background-color: #f5f2c0;
     text-align: left;
-    padding: 15px 400px;
+    padding-right: 400px;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     margin-top: 20px;
     margin-bottom: 20px;
     margin-right: 20px;
     margin-left: 20px;
+    /*border: 1px outset red;*/
+}
+
+.font-30{
+    font-size: 30px;
+}
+
+.font-20{
+    font-size: 20px;
+}
+
+.borroso{
+    color: #c1c1c1;
 }
 
 ul {
@@ -42,16 +58,6 @@ ul {
 li {
   display: inline-block;
   margin-right: 10px;
-}
-
-aside {
-    width: 30%;
-    padding-left: 15px;
-    float: top;
-    border: 1px;
-    border-color: red;
-    background-color: #c1c1c1;
-    text-align: center;
 }
 
 .separate-blocks{
