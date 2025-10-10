@@ -18,67 +18,29 @@
     border: 1px outset red;
     height: 100%;
     vertical-align: middle;
-}
 
-.titulo{
-    font-size: 40px;
-    padding-left: 30px; 
-    padding-bottom: 15px;
-    position:relative;
-}
-
-.grayDiv{
-    /* border: 1px outset #c1c1c1; */
-    background-color: #c1c1c1;
-    text-align: left;
-    padding-top: 1px;
-    padding-bottom: 1px;
-}
-
-.floatingYellowDiv{
-    border: 1px outset #c1c1c1;
-    background-color: #f5f2c0;
-    text-align: left;
-    padding-right: 400px;
-    padding-left: 30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-right: 20px;
-    margin-left: 20px;
-    /*border: 1px outset red;*/
-}
-
-@media screen and (max-width: 800px){
-    .separate-blocks .imagen{
-        display: none !important;
+    .titulo{
+        font-size: 50px;
+        padding-bottom: 15px;
+        /* min-width: 500px; */
+        position: center;
+        float: left;
+        position: relative;
+        text-align: center;
     }
 }
 
-.font-30{
-    font-size: 30px;
-}
+/*Cosas responsive*/
+@media screen and (max-width: 800px){
+    /*Desaparece la imagen cuando se hace muy pequeño*/
+    .separate-blocks .imagen{
+        display: none !important;
+    }
 
-.font-20{
-    font-size: 20px;
-}
-
-.borroso{
-    color: #c1c1c1;
-}
-
-ul {
-    text-align: left;
-}
-
-li {
-  display: inline-block;
-  margin-right: 10px;
-}
-
-.imagen-transp{
-    mix-blend-mode: multiply;
+    /*El titulo cambia propiedades para adaptarse*/
+    .separate-blocks .titulo{
+        font-size: 30px;
+    }
 }
 
 .separate-blocks{
@@ -101,22 +63,54 @@ body *{
     border: 0;
     padding: 0;
 
-    .titulo {
-        font-size: 50px;
-        /* margin-left: 300px; */
-        padding-bottom: 15px;
-        min-width: 500px;
-        position: center;
-        float: left;
-        position: relative;
-        text-align: center;
-        /* border: 1px outset red; */
+    .grayDiv{
+        /* border: 1px outset #c1c1c1; */
+        background-color: #c1c1c1;
+        text-align: left;
+        padding-top: 1px;
+        padding-bottom: 1px;
     }
 
+    .floatingYellowDiv{
+        border: 1px outset #c1c1c1;
+        background-color: #f5f2c0;
+        text-align: left;
+        padding-right: 400px;
+        padding-left: 30px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-right: 20px;
+        margin-left: 20px;
+
+        /*Esto se usa para modificar los textos*/
+        .font-30{
+            font-size: 30px;
+        }
+
+        .font-20{
+            font-size: 20px;
+        }
+
+        .borroso{
+            color: #c1c1c1;
+        }
+
+        /*Esto da algo de transparencia a una imagen de forma artificial*/
+        .imagen-transp{
+            mix-blend-mode: multiply;
+        }
+        /*border: 1px outset red;*/
+    }
+
+    /*Aquí esta todo lo que tiene que ver con la barra de busqueda*/
     .navegador{
         border: 1px outset #c1c1c1;
         background-color: #c1c1c1;
         overflow: hidden;
+        /*Esto es muy útil*/
+        min-width: 210px;
 
         a{
             float: left;
@@ -150,5 +144,4 @@ body *{
             cursor: pointer;
         }
     }
-
 }
