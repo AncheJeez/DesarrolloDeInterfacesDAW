@@ -1,8 +1,8 @@
 .contenedor{
    display: grid;
-   height: 100vh; /*ocupa el alto de la pantalla*/
-   grid-template-columns: repeat(2, 2fr);/*los elementos ocuparan 3 columnas*/
-   grid-template-rows: repeat(1, 1fr);  /*los elementos ocuparan 2 filas*/
+   height: 100vh;
+   grid-template-columns: repeat(3, 2fr);
+   grid-template-rows: repeat(1);
  }
  
 .item{
@@ -11,7 +11,7 @@
    font-family: arial;
    color: white;
    text-align: center;
-   background: linear-gradient(135deg, rgb(97, 234, 222) 0%, rgb(30, 168, 255) 100%);
+   background: green;
    display: flex;
    justify-content: center;
    align-items: center;

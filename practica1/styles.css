@@ -1,8 +1,11 @@
 .yellowDiv {
+    display: block;
     border: 1px outset #c1c1c1;
     background-color: #f5f2c0;
     text-align: left;
-    padding-right: 400px;
+
+    
+    padding-right: 30px;
     padding-left: 30px;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -10,12 +13,12 @@
     margin-bottom: 20px;
     margin-right: 20px;
     margin-left: 20px;
-    border: 1px outset red;
+    /* border: 1px outset red; */
 }
 
 .separate-blocks{
     display: inline-block;
-    border: 1px outset red;
+    /* border: 1px outset red; */
     height: 100%;
     vertical-align: middle;
 
@@ -109,8 +112,9 @@ body *{
         border: 1px outset #c1c1c1;
         background-color: #c1c1c1;
         overflow: hidden;
+        width: 100%;
         /*Esto es muy útil*/
-        min-width: 210px;
+        /* min-width: 210px; */
 
         a{
             float: left;
