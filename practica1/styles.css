@@ -104,28 +104,28 @@
         text-decoration: none;
         font-size: 17px;
     }
+}
 
-    .contenedor-busqueda{
-        float: right;
-    }
+.contenedor-busqueda{
+    float: right;
+}
 
-    input[type=text] {
-        padding: 6px;
-        margin-top: 8px;
-        font-size: 17px;
-        border: none;
-    }
+input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+}
 
-    .contenedor-busqueda button {
-        float: right;
-        padding: 6px;
-        margin-top: 8px;
-        margin-right: 16px;
-        background: #ddd;
-        font-size: 17px;
-        border: none;
-        cursor: pointer;
-    }
+.contenedor-busqueda button {
+    float: right;
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
 }
 
 .titulo-form{
@@ -145,9 +145,21 @@
         border-bottom: 1px outset black;
         padding:10px;
 
-        label::before {
-            content: "\0009";
+        label{
             text-align: right;
         }
     }
+
+    button{
+        float: right;
+        background-color: blue;
+        color: white;
+        margin-right: 40px;
+    }
+}
+
+.warning{
+    color:red;
+    float:right; 
+    margin-right:30px;
 }
