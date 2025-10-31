@@ -12,15 +12,30 @@
             <div class="titulo">RESPONSIVE WEB</div>
         </div>
         <div class="navegador">
-            <a>Principial</a>
-            <a>Fotos</a>
-            <a>Videos</a>
-            <a href="formulario.html">Formulario</a>
-            <div class="contenedor-busqueda">
-                <form action="">
-                    <input type="text" placeholder="Buscando..." name="search">
-                    <button type="submit">Buscar</button>
-                </form>
+            <div id="wraper">
+                <div class="hamburguesa" onclick="animationBurgerToX(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <div class="burger-menu">
+                    <a href="#">Principial</a>
+                    <a href="#">Fotos</a>
+                    <a href="#">Videos</a>
+                    <a href="formulario.html">Formulario</a>
+                </div>
+            </div>
+            <div class="changeOnSize">
+                <a href="#">Principial</a>
+                <a href="#">Fotos</a>
+                <a href="#">Videos</a>
+                <a href="formulario.html">Formulario</a>
+                <div class="contenedor-busqueda">
+                    <form action="">
+                        <input type="text" placeholder="Buscando..." name="search">
+                        <button type="submit">Buscar</button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
@@ -61,5 +76,6 @@
             Mensaje numero 1 <br> Mensaje numero 2
         </div>
     </div>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
