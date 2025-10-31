@@ -1,0 +1,19 @@
+.contenedor{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: green;
+    padding: 5px;
+    gap: 5px;
+
+    div{
+        text-align: center;
+        background-color: #f1f1f1;
+    }
+
+    .item4{
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start: 4;
+        grid-column-end: 4;
+    }
+}
