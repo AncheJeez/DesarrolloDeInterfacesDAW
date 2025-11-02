@@ -1,6 +1,12 @@
+:root {
+    --width:30px;
+    --height:30px;
+}
+
 .contenedor{
     display: grid;
     grid-template-columns: auto auto auto auto;
+    grid-template-rows: 1fr min-content;
     background-color: green;
     padding: 5px;
     gap: 5px;
@@ -8,6 +14,30 @@
     div{
         text-align: center;
         background-color: #f1f1f1;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        .ball {
+            text-align: center;
+            border-radius: 50%;
+            width: var(--width);
+            height: var(--height);
+            background-color: green;
+            background-size: contain;
+            background-repeat: no-repeat;
+            position:absolute;
+
+            animation: toRight linear 3s infinite alternate, bounce linear 10s infinite alternate, change-color 1s ease-in-out infinite;
+        }
+    }
+
+    .item2 img {
+        animation: shake 1s ease-in-out infinite;
+    }
+
+    .item3 img{
+        animation: spin 1s ease-in-out infinite;
     }
 
     .item4{
@@ -15,5 +45,84 @@
         grid-row-end: 3;
         grid-column-start: 4;
         grid-column-end: 4;
+        animation: shake 1s ease-in-out infinite, spin 1s ease-in-out infinite, change-color 1s ease-in-out infinite, change-size 1s ease-in-out infinite;
     }
+
+    .item5{
+        animation: change-color 1s ease-in-out infinite;
+    }
+
+    .item6{
+        animation: change-size 1s ease-in-out infinite;
+    }
+
+    .item7{
+        animation: flipx 1s ease-in-out infinite;
+    }
+    
+    img{
+        width: 100%;
+        height:100%;
+        object-fit: cover;
+        display: block;
+    }
+}
+
+@keyframes bounce {
+    0% {
+        top:0;
+    }
+    48% {
+    }
+    50% {
+        top: calc(100% - var(--height));
+    }
+    52% {
+    }
+    100% {
+        top: 0;
+    }
+}
+
+@keyframes toRight {
+
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: calc(100% - var(--width));
+    }
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes change-color {
+    33% {filter: hue-rotate(90deg);}
+    66%{filter: hue-rotate(180deg);}
+    100%{filter: hue-rotate(270deg);}
+}
+
+@keyframes change-size{
+    50%{transform: scaleX(0.2) scaleY(0.2);}
+}
+
+@keyframes flipx{
+    0%   { transform: rotateY(0deg); }
+    50% { transform: rotateY(180deg); }
 }
