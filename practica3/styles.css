@@ -33,19 +33,21 @@
         }
     }
 
-    /* .item2 :hover{
-        animation: shake 1s ease-in-out infinite;
-        .top-txt, .bttm-txt{
-            animation: shake 1s ease-in-out infinite;
-        }
-    } */
+    .top-txt, .bttm-txt, .center-txt, .left-txt, .right-txt{
+        background-color: rgba(255, 99, 71, 0);
+        -webkit-text-stroke: 0.1px white;
+        opacity: 0;
+        transition: 0.3s ease-in-out;
+    }
 
     .item2:hover{
         animation: shake 1s ease-in-out infinite;
+        .top-txt, .bttm-txt{opacity: 1;}
     }
 
     .item3:hover{
         animation: spin 1s ease-in-out infinite;
+        .top-txt, .bttm-txt{opacity: 1;}
     }
 
     .item4{
@@ -53,10 +55,21 @@
         grid-row-end: 3;
         grid-column-start: 4;
         grid-column-end: 4;
+        img{transition: opacity 1s ease;}
+        .center-txt{font-size: 20px;-webkit-text-stroke: 0.1px green;}
+        .top-txt{-webkit-text-stroke: 0.1px green;}
+        button{
+            background-color: green;
+            color: white; 
+            padding-left:20px; 
+            padding-right:20px;
+        }
     }
 
     .item4:hover{
-        animation: shake 1s ease-in-out infinite, spin 1s ease-in-out infinite, change-color 1s ease-in-out infinite, change-size 1s ease-in-out infinite;
+        background-color: orange;
+        img{opacity: 0.3;filter: hue-rotate(45deg);}
+        .top-txt, .bttm-txt, .center-txt{opacity: 1; z-index: 3;}
     }
 
     .item5{
@@ -64,27 +77,29 @@
         overflow: hidden;
     }
 
-    .item5 img {
-        transition: transform 0.3s ease;
-    }
-
-    .item5:hover img{
-        transform: scale(1.5);
+    .item5:hover{
         animation: change-color 1s ease-in-out infinite;
-    }
-
-    .item5:hover .top-txt, 
-    .item5:hover .bttm-txt {
-        color: red;
-        top: 80%;
+        .center-txt{opacity: 1; z-index: 3;}
+        img{
+            transform: scale(1.5);
+            transition: transform 0.3s ease;
+        }
     }
 
     .item6:hover{
         animation: change-size 1s ease-in-out infinite;
+        .top-txt, .bttm-txt{opacity: 1;}
+    }
+
+    .item7{
+        .top-txt, .left-txt, .right-txt{
+            -webkit-text-stroke: 1px black;
+        }
     }
 
     .item7:hover{
-        animation: flipx 1s ease-in-out infinite;
+        animation: change-grayscale 1s ease-in-out infinite;
+        .top-txt, .left-txt, .right-txt{opacity: 1;}
     }
     
     img{
@@ -100,6 +115,7 @@
         top: 5%;
         left: 50%;
         transform: translate(-50%, -50%);
+        font-size: 35px;
     }
 
     .bttm-txt{
@@ -108,6 +124,34 @@
         top: 95%;
         left: 50%;
         transform: translate(-50%, -50%);
+        font-size: 35px;
+    }
+
+    .center-txt{
+        position: absolute;
+        text-align: center;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 35px;
+    }
+
+    .left-txt{
+        position: absolute;
+        text-align: center;
+        top: 45%;
+        left: 15%;
+        transform: translate(-50%, -50%);
+        font-size: 35px;
+    }
+
+    .right-txt{
+        position: absolute;
+        text-align: center;
+        top: 45%;
+        left: 85%;
+        transform: translate(-50%, -50%);
+        font-size: 35px;
     }
 }
 
@@ -168,6 +212,11 @@
 @keyframes flipx{
     0%   { transform: rotateY(0deg); }
     50% { transform: rotateY(180deg); }
+}
+
+@keyframes change-grayscale{
+    0%{filter: grayscale(100%);}
+    100%{filter: grayscale(100%);}
 }
 
 @media screen and (max-width: 550px){
