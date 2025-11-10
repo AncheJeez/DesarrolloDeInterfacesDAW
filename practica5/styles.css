@@ -1,0 +1,20 @@
+body{
+    background-color: #E9967A;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: #F54927;
+    gap: 5px;
+    padding: 5px;
+}
+
+.container .respuesta{
+    grid-column: 1 / span 4;
+    background-color: #F08080;
+}
+
+.container button{
+    background-color: #F08080;
+}
