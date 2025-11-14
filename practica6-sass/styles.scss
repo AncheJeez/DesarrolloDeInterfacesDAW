@@ -1,0 +1,125 @@
+// VARIABLES
+$color-fondo: #f5f2c0;
+$color-borde: #c1c1c1;
+$color-navegador: #c1c1c1;
+@import "imports";
+
+@mixin padding-sides($pad-top,$pad-left,$pad-right,$pad-bot){
+    padding-top: $pad-top;
+    padding-left: $pad-left;
+    padding-right: $pad-right;
+    padding-bottom: $pad-bot;
+}
+
+@mixin fondo-borde{
+    background-color: $color-fondo;
+    border: 1px outset $color-borde;
+}
+
+.bloque-titulo {
+    @include fondo-borde;
+    display: flex;
+    flex-direction: column;
+
+    .titulo {
+        font-size: 40px;
+        font-weight: bold;
+        padding: 20px;
+    }
+
+    .navegador {
+        background-color: $color-navegador;
+        font-weight: bold;
+        text-align: left;
+
+        input[name="boton"] {
+            display: none;
+        }
+
+        label {
+            padding-left: 15px;
+            padding-top: 10px;
+            margin-bottom: 10px;
+            cursor: pointer;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        input[name="boton"]:checked + label {
+            color: red;
+        }
+    }
+}
+.distribucion-lateral{
+    display: flex;
+    // border: 1px outset red;
+    flex-wrap: nowrap;
+    .contenedores-amarillos{
+        // border: 1px outset red;
+        margin:10px;
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+
+        .bloque{
+            @include fondo-borde;
+            margin:10px;
+            @include padding-sides(30px,20px,0px,0px);
+
+            .titulo-bloque{
+                font-size: 30px;
+                font-weight: bold;
+
+                &--subtitulo{
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+            }
+
+            .gray-text{
+                color: $color-borde;
+            }
+
+            img{
+                border: 1px outset $color-borde;
+            }
+
+            .comentarios{
+                text-align: right;
+                @include padding-sides(0px,0px,20px,20px);
+            }
+        }
+
+    }
+}
+
+// @mixin tarjeta {
+//   padding: 20px;
+//   border-radius: 10px;
+//   background: white;
+// }
+
+// .caja1 { @include tarjeta; }
+// .caja2 { @include tarjeta; }
+
+// @function claro($color) {
+//   @return lighten($color, 20%);
+// }
+
+// .caja {
+//   background: claro(#c00);
+// }
+
+// _colores.scss
+// _componentes.scss
+// _layout.scss
+// styles.scss
+// @import "colores";
+// @import "componentes";
+// @import "layout";
+
+// .caja {
+//   width: 300px / 2; // 150px
+// }

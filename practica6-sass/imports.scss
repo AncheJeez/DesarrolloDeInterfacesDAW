@@ -1,0 +1,14 @@
+.distribucion-lateral{
+    display: flex;
+    // border: 1px outset red;
+    flex-wrap: nowrap;
+
+    .mensajes{
+        // border: 1px outset red;
+        background-color: $color-borde;
+        margin: 20px;
+        padding: 15px;
+        width: 20%;
+        height: 50%;
+    }
+}
