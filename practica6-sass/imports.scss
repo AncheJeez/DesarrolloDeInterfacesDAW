@@ -1,3 +1,9 @@
+@mixin mobile{
+    @media screen and (max-width: 680px) {
+        @content;
+    }
+}
+
 .distribucion-lateral{
     display: flex;
     // border: 1px outset red;
@@ -10,5 +16,10 @@
         padding: 15px;
         width: 20%;
         height: 50%;
+
+        @include mobile() {
+            width: 85%;
+            text-align: center;
+        }
     }
 }
