@@ -1,0 +1,41 @@
+#boton1,
+#boton2,
+#boton3 {
+display: none;
+}
+#boton1:checked~.imagenes .coches{
+display: block;
+}
+#boton1:checked~ .imagenes .animales{
+display: block;
+}
+#boton2:checked~.imagenes .animales {
+display: block;
+}
+#boton3:checked~.imagenes .coches {
+display: block;
+}
+.imagenes .coches, .imagenes .animales{
+    display: none;
+}
+.animales img{
+    width: 300px;
+    height: 300px;
+}
+.portfolio{
+    position: relative;
+}
+
+@media screen and (max-width: 800px){
+    .animales a1{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .coches a2{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+}

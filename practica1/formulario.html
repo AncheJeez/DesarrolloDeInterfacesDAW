@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="viewport" charset="UTF-8" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <title>RESPONSIVE WEB</title>
+</head>
+<body>
+    <div class="titulo-form">Contacta con nosotros</div>
+    <div class="contenedor-busqueda">
+        <form action="">
+            <div class="warning">*Son requeridos</div><br>
+            <input type="text" placeholder="Buscando..." name="search">
+            <button type="submit">Buscar</button>
+        </form>
+    </div>
+    <div class="formulario">
+        <form class="contact-form" action="#" method="post">
+            <div class="row">
+                <label for="name" style="color:red;">Nombre:</label>
+                <input type="text" id="name" name="name" placeholder="Juan" required>
+            </div>
+            <div class="row">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="nombre@algo.com" required>
+                Formato adecuado "nombre@algo.com"
+            </div>
+            <div class="row">
+                <label for="website" style="color:red;">Website:</label>
+                <input type="url" id="website" name="website" placeholder="">
+                Formato adecuado "http://direccion.com"
+            </div>
+            <div class="row">
+                <label for="hobbies">Hobbies:</label>
+                <input type="text" id="hobbies" name="hobbies" placeholder="">
+            </div>
+            <div class="row">
+                <label for="message" style="color:red;">Mensaje:</label>
+                <textarea id="message" name="message" placeholder="Mensaje" rows="5" required></textarea>
+            </div>
+            <button type="submit">Enviar formulario</button>
+            <a href="index.html">Volver</a>
+        </form>
+    </div>
+</body>
+</html>

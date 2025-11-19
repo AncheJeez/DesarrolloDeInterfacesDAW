@@ -1,0 +1,113 @@
+.distribucion-lateral {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.distribucion-lateral .mensajes {
+  background-color: #c1c1c1;
+  margin: 20px;
+  padding: 15px;
+  width: 20%;
+  height: 50%;
+}
+@media screen and (max-width: 680px) {
+  .distribucion-lateral .mensajes {
+    width: 85%;
+    text-align: center;
+  }
+}
+
+/*https://platzi.com/blog/como-usar-media-queries-en-sass/*/
+.bloque-titulo {
+  background-color: #f5f2c0;
+  border: 1px outset #c1c1c1;
+  display: flex;
+  flex-direction: column;
+}
+.bloque-titulo .titulo {
+  font-size: 40px;
+  font-weight: bold;
+  padding: 20px;
+}
+@media screen and (max-width: 680px) {
+  .bloque-titulo .titulo {
+    font-size: 30px;
+  }
+}
+.bloque-titulo .navegador {
+  background-color: #c1c1c1;
+  font-weight: bold;
+  text-align: left;
+}
+.bloque-titulo .navegador input[name=boton] {
+  display: none;
+}
+.bloque-titulo .navegador label {
+  padding-left: 15px;
+  padding-top: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.bloque-titulo .navegador label:hover {
+  text-decoration: underline;
+}
+.bloque-titulo .navegador input[name=boton]:checked + label {
+  color: red;
+}
+
+.distribucion-lateral {
+  display: flex;
+  flex-wrap: nowrap;
+}
+@media screen and (max-width: 680px) {
+  .distribucion-lateral {
+    display: block;
+  }
+}
+.distribucion-lateral .contenedores-amarillos {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+@media screen and (max-width: 680px) {
+  .distribucion-lateral .contenedores-amarillos {
+    width: 95%;
+  }
+}
+.distribucion-lateral .contenedores-amarillos .bloque {
+  background-color: #f5f2c0;
+  border: 1px outset #c1c1c1;
+  margin: 10px;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+}
+.distribucion-lateral .contenedores-amarillos .bloque .titulo-bloque {
+  font-size: 30px;
+  font-weight: bold;
+}
+.distribucion-lateral .contenedores-amarillos .bloque .titulo-bloque--subtitulo {
+  font-size: 20px;
+  font-weight: bold;
+}
+.distribucion-lateral .contenedores-amarillos .bloque .gray-text {
+  color: #c1c1c1;
+}
+.distribucion-lateral .contenedores-amarillos .bloque img {
+  border: 1px outset #c1c1c1;
+}
+@media screen and (max-width: 680px) {
+  .distribucion-lateral .contenedores-amarillos .bloque img {
+    width: 50%;
+  }
+}
+.distribucion-lateral .contenedores-amarillos .bloque .comentarios {
+  text-align: right;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+/*# sourceMappingURL=styles.css.map */
