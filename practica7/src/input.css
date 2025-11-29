@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "tailwindcss/utilities";
 
 @theme {
     --color-mint-500: oklch(0.72 0.11 178);
@@ -19,3 +20,5 @@
 @import "flowbite/src/themes/default";
 @plugin "flowbite/plugin";
 @source "../node_modules/flowbite";
+
+@custom-variant dark (&:where(.dark, .dark *));
