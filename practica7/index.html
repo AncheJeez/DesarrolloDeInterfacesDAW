@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="src/output.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet" />
     <title>PRACTICA 7</title>
 </head>
 <body class ="bg-blue-200">
     <!--CONTENEDOR BASE-->
-    <div class="flex flex-row h-100 bg-white rounded-xl m-4">
+    <div class="flex flex-col md:flex-row h-auto md:h-[70vh] bg-white rounded-xl m-4 pb-20">
         <div class="basis-64 bg-generic-blue-100 rounded-xl grow p-4">
             <div class="text-light-blue-100 font-bold text-xl text-center">
                 Su resultado
@@ -32,12 +33,152 @@
         </div>
         <div class="basis-64 grow p-4">
             <div class="font-bold text-xl">Resumen</div>
-            <div class="bg-faint-red-100 rounded-xl">
-                Reacción
+
+            <div class="bg-faint-red-100/50 rounded-lg p-4 flex items-center justify-between mt-3">
+                <div class="flex items-center gap-2">
+                    <svg 
+                        class="w-6 h-6 text-faint-red-300" 
+                        fill="currentColor" 
+                        viewBox="0 0 30 30"
+                    >
+                        <path d="M30 15.25h-11.006l3.727-13.044c0.018-0.062 0.029-0.133 0.029-0.206 0-0.414-0.336-0.75-0.75-0.75-0.161 0-0.31 0.051-0.432 0.137l0.002-0.002-20 14c-0.194 0.137-0.32 0.361-0.32 0.614 0 0.414 0.335 0.75 0.749 0.75h10.862l-5.552 12.955c-0.038 0.087-0.061 0.188-0.061 0.295 0 0.414 0.336 0.75 0.75 0.75 0.149 0 0.289-0.044 0.405-0.119l-0.003 0.002 22-14c0.211-0.135 0.348-0.368 0.348-0.633 0-0.414-0.336-0.75-0.75-0.75-0 0-0.001 0-0.001 0h0zM9.646 28.064l5.044-11.768c0.038-0.087 0.061-0.189 0.061-0.296 0-0.414-0.336-0.75-0.75-0.75h-9.621l16.318-11.423-3.418 11.967c-0.018 0.062-0.029 0.133-0.029 0.206 0 0.414 0.336 0.75 0.75 0.75h9.424z"></path>
+                    </svg>
+                    <span class="text-faint-red-300">Reacción</span>
+                </div>
+                <span class="font-bold">80/100</span>
             </div>
+
+            <div class="bg-faint-yellow-100/50 rounded-lg p-4 flex items-center justify-between mt-3">
+                <div class="flex items-center gap-2">
+                    <svg class="w-6 h-6 text-faint-yellow-300" fill="none" stroke="currentColor" viewBox="0 0 30 30">
+                        <path d="M19.0006 9.03002C19.0007 8.10058 18.8158 7.18037 18.4565 6.32317C18.0972 5.46598 17.5709 4.68895 16.9081 4.03734C16.2453 3.38574 15.4594 2.87265 14.5962 2.52801C13.7331 2.18336 12.8099 2.01409 11.8806 2.03002C10.0966 2.08307 8.39798 2.80604 7.12302 4.05504C5.84807 5.30405 5.0903 6.98746 5.00059 8.77001C4.95795 9.9595 5.21931 11.1402 5.75999 12.2006C6.30067 13.2609 7.10281 14.1659 8.09058 14.83C8.36897 15.011 8.59791 15.2584 8.75678 15.5499C8.91565 15.8415 8.99945 16.168 9.00059 16.5V18.03H15.0006V16.5C15.0006 16.1689 15.0829 15.843 15.24 15.5515C15.3971 15.26 15.6241 15.0121 15.9006 14.83C16.8528 14.1911 17.6336 13.328 18.1741 12.3167C18.7147 11.3054 18.9985 10.1767 19.0006 9.03002V9.03002Z"/>
+                        <path d="M15 21.04C14.1345 21.6891 13.0819 22.04 12 22.04C10.9181 22.04 9.86548 21.6891 9 21.04"/>
+                    </svg>
+                    <span class="text-faint-yellow-300">Memoria</span>
+                </div>
+                <span class="font-bold">92/100</span>
+            </div>
+
+
+            <div class="bg-faint-green-100/50 rounded-lg p-4 flex items-center justify-between mt-3">
+                <div class="flex items-center gap-2">
+                    <svg class="w-6 h-6 text-faint-green-300" fill="none" stroke="currentColor" viewBox="0 0 30 30">
+                        <path d="M17 3.33782C15.5291 2.48697 13.8214 2 12 2C6.47715 2 2 6.47715 2 12C2 13.5997 2.37562 15.1116 3.04346 16.4525C3.22094 16.8088 3.28001 17.2161 3.17712 17.6006L2.58151 19.8267C2.32295 20.793 3.20701 21.677 4.17335 21.4185L6.39939 20.8229C6.78393 20.72 7.19121 20.7791 7.54753 20.9565C8.88837 21.6244 10.4003 22 12 22C17.5228 22 22 17.5228 22 12C22 10.1786 21.513 8.47087 20.6622 7"/>
+                        <path d="M8 12H8.009M11.991 12H12M15.991 12H16"/>
+                    </svg>
+                    <span class="text-faint-green-300">Verbal</span>
+                </div>
+                <span class="font-bold">61/100</span>
+            </div>
+
+
+            <div class="bg-faint-blue-100/50 rounded-lg p-4 flex items-center justify-between mt-3">
+                <div class="flex items-center gap-2">
+                    <svg class="w-6 h-6 text-faint-blue-300" fill="none" stroke="currentColor" viewBox="0 0 30 30">
+                        <path d="M9 4.45962C9.91153 4.16968 10.9104 4 12 4C16.1819 4 19.028 6.49956 20.7251 8.70433C21.575 9.80853 22 10.3606 22 12C22 13.6394 21.575 14.1915 20.7251 15.2957C19.028 17.5004 16.1819 20 12 20C7.81811 20 4.97196 17.5004 3.27489 15.2957C2.42496 14.1915 2 13.6394 2 12C2 10.3606 2.42496 9.80853 3.27489 8.70433C3.75612 8.07914 4.32973 7.43025 5 6.82137"/>
+                        <path d="M15 12C15 13.6569 13.6569 15 12 15C10.3431 15 9 13.6569 9 12C9 10.3431 10.3431 9 12 9C13.6569 9 15 10.3431 15 12Z"/>
+                    </svg>
+                    <span class="text-faint-blue-300">Visual</span>
+                </div>
+                <span class="font-bold">72/100</span>
+            </div>
+
+            <div class="relative w-fit mx-auto mt-4 group">
+                <button
+                    type="button"
+                    class="text-white bg-brand border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-full text-sm px-6 py-3 focus:outline-none"
+                >
+                    Continuar
+                </button>
+
+                <div
+                    class="absolute left-1/2 -translate-x-1/2 -top-12  min-w-64 border-solid
+                        bg-white text-black text-sm rounded-lg px-3 py-2 
+                        opacity-0 pointer-events-none
+                        group-hover:opacity-100 transition-all duration-300"
+                >
+                    <span class="font-bold">¿Quiere saber más?</span>
+                    Pulse en 'Continuar' para obtener un análisis más detallado de su resultado.
+
+                </div>
+            </div>
+            
         </div>
         <div class="basis-64 grow p-4">
+            <!-- https://flowbite.com/docs/getting-started/quickstart/ -->
+            <!-- https://flowbite.com/docs/components/carousel/ -->
+            <div id="default-carousel" class="relative w-full" data-carousel="slide">
+                <!-- Carousel wrapper -->
+                <div class="relative h-56 overflow-hidden rounded-base md:h-96">
+                    <!-- Item 1 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="../imagenes_a_usar/montain-image.jpeg" class="block w-full h-full object-cover" alt="...">
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="../imagenes_a_usar/night-car.jpg" class="block w-full h-full object-cover" alt="...">
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="../imagenes_a_usar/orange-cat.jpeg" class="block w-full h-full object-cover" alt="...">
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="../imagenes_a_usar/pink-tree.jpg" class="block w-full h-full object-cover" alt="...">
+                    </div>
+                    <!-- Item 5 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="../imagenes_a_usar/forest.jpg" class="block w-full h-full object-cover" alt="...">
+                    </div>
+                </div>
+                <!-- Slider indicators -->
+                <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+                    <button type="button" class="w-3 h-3 rounded-base" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                    <button type="button" class="w-3 h-3 rounded-base" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                    <button type="button" class="w-3 h-3 rounded-base" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                    <button type="button" class="w-3 h-3 rounded-base" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+                    <button type="button" class="w-3 h-3 rounded-base" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+                </div>
+                <!-- Slider controls -->
+                <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-base bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                        <svg class="w-5 h-5 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 19-7-7 7-7"/></svg>
+                        <span class="sr-only">Previous</span>
+                    </span>
+                </button>
+                <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-base bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                        <svg class="w-5 h-5 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7"/></svg>
+                        <span class="sr-only">Next</span>
+                    </span>
+                </button>
+            </div>
         </div>
     </div>
+    <div class="fixed bottom-0 left-0 w-full bg-transparent px-4 py-3 z-50">
+        <div class="flex items-center justify-between px-4 py-3 mt-4">
+            <span class="text-black font-medium">
+                Andrés J.
+            </span>
+            <div class="flex items-center gap-3">
+                <button
+                    type="button"
+                    class="text-white bg-brand border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-full text-sm px-6 py-3 focus:outline-none"
+                >
+                    Anterior
+                </button>
+                <button
+                    type="button"
+                    class="text-white bg-brand border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-full text-sm px-6 py-3 focus:outline-none"
+                >
+                    Siguiente
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script src="https://unpkg.com/flowbite@1.7.5/dist/flowbite.min.js"></script> -->
+    <!-- <script src="../path/to/flowbite/dist/flowbite.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
 </body>
 </html>

@@ -5,5 +5,17 @@
     --color-generic-blue-100: oklch(0.6059 0.182 253.06);
     --color-generic-blue-500: oklch(0.5324 0.1993 253.06);
     --color-light-blue-100: oklch(0.8588 0.0686 253.06);
-    --color-faint-red-100: oklch(0.9824 0.034 12.71);
+    --color-faint-red-100: oklch(0.8676 0.1332 18);
+    --color-faint-red-300: oklch(0.6382 0.2738 18);
+    --color-faint-yellow-100: oklch(0.8971 0.1283 82.59);
+    --color-faint-yellow-300: oklch(0.6794 0.1998 82.59);
+    --color-faint-green-100: oklch(0.9 0.1702 145.06);
+    --color-faint-green-300: oklch(0.6176 0.2121 145.06);
+    --color-faint-blue-100: oklch(0.7294 0.1529 260.47);
+    --color-faint-blue-300: oklch(0.5088 0.1998 260.47);
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import "flowbite/src/themes/default";
+@plugin "flowbite/plugin";
+@source "../node_modules/flowbite";
