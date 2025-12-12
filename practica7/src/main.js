@@ -1,8 +1,12 @@
-import './style.css';
+// import './style.css';
 
 const html = document.documentElement;
 const btnLight = document.getElementById('btnLight');
 const btnDark = document.getElementById('btnDark');
+
+//probando si bootstrap funciona
+var bootstrap_enabled = typeof bootstrap !== "undefined" && typeof bootstrap.Modal === "function";
+console.log(bootstrap_enabled);
 
 btnDark.addEventListener('click', (e) => {
     e.preventDefault();
