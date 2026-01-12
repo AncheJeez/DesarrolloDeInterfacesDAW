@@ -1,5 +1,4 @@
 *.zip
 *.rar
-\practica_bootstrap\enunciados
 \practica_bootstrap\node_modules
 #npm install bootstrap@5.3.8
