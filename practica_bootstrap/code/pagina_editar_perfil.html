@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+
+    <title>Ejercicio bootstrap</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg  bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="../imagenes/logo-insti.jpg" alt="Logo" height="40">
+            </a>
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="pagina_administrar_curso.html" class="nav-link" href="#modalLogin" role="button">Acceda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="pagina_editar_perfil.html" class="nav-link" href="#exampleModalToggle" role="button">Registrarse</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="title-enroll" class="text-white text-center">
+        <div class="p-5 mb-4 rounded-3">
+            <div class="container-fluid">
+                <h1>Aprende Bootstrap 5 y CSS a la vez</h1>
+                <p>Aprende paso a paso a crear tus propuas <strong>Aplicaciones Web</strong> y 
+                conviértete en un <strong>Experto diseñador</strong></p>
+                <p><a class="btn btn-primary btn-lg" href="pagina_editar_perfil.html" >Inscríbete Ahora &raquo;</a></p>
+                
+            </div>
+        </div>
+    </section>
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+
+            <h1 class="mb-4">Mis datos</h1>
+
+            <form class="needs-validation" novalidate>
+
+                <!-- EMAIL -->
+                <div class="mb-3">
+                <label for="email" class="form-label">Email*</label>
+                <input
+                    type="email"
+                    class="form-control rounded-3"
+                    id="email"
+                    required
+                >
+                <div class="invalid-feedback">
+                    ¡Oh, oh! No es un email válido
+                </div>
+                </div>
+
+                <!-- NAME -->
+                <div class="mb-3">
+                <label for="name" class="form-label">Nombre*</label>
+                <input
+                    type="text"
+                    class="form-control rounded-3"
+                    id="name"
+                    required
+                >
+                <div class="invalid-feedback">
+                    Introduce un nombre, por favor.
+                </div>
+                </div>
+
+                <!-- PHOTO -->
+                <div class="mb-3">
+                <label class="form-label">Foto de perfil*</label>
+
+                <div class="d-flex align-items-center gap-3">
+                    <!-- FILE INPUT -->
+                    <div class="flex-grow-1">
+                    <input
+                        type="file"
+                        class="form-control rounded-3"
+                        id="photo"
+                        accept="image/png, image/jpeg"
+                        required
+                    >
+                    <div class="invalid-feedback">
+                        Introduce una foto válida.
+                    </div>
+                    </div>
+
+                </div>
+                <img
+                    src="../imagenes/user.png"
+                    alt="Foto de perfil"
+                    class="rounded-circle border"
+                    width="80"
+                    height="80"
+                    >
+                </div>
+
+                <button type="submit" class="btn btn-primary">
+                Actualizar perfil
+                </button>
+
+            </form>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    </body>
+<footer class="text-green text-center bg-secondary">
+    <div class="container-fluid p-1">
+        <p>
+            Aprenda Bootstrap 5.2 y mucho más. &copy; 2024 | Made with 
+            <i class="fa fa-heart" aria-hidden="true"></i>
+            by
+            <a href="https://www.iescamas.es/" class="text-warning"
+            >Andrés Sánchez</a>
+        </p>
+    </div>
+</footer>
+<!-- <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
+<script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</html>

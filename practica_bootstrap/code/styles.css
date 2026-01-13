@@ -5,9 +5,68 @@
     background-repeat: no-repeat;
 }
 
-#what-learn {
+#what-learn{
     background-image: url("../imagenes/texture.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+.bg-indigo {
+    background-color: #6610f2;
+}
+
+#instructor-section{
+    background-image: url("../imagenes/texture.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bg-purple{
+    background-color: blueviolet;
+}
+
+.accordion-button {
+    background-color: #e2818b; /* rojo bootstrap */
+    color: white;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #e2818b; /* rojo más oscuro */
+    color: white;
+}
+
+.accordion-item {
+    border: 1px solid #dc3545;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#comentarios {
+    margin-top: 40px;
+}
+
+.panel {
+    border-radius: 4px;
+}
+
+.media-body p {
+    margin-bottom: 10px;
+}
+
+.comentarios-box {
+    border: 1px solid #ddd;
+    padding: 20px;
+    background: #fff;
+    border-radius: 4px;
+}
+
+.comentario {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.respuesta{
+    margin-left: 60px;
+    padding-top: 15px;
 }
