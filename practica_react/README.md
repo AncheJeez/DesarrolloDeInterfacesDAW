@@ -1,3 +1,15 @@
+comando que he ido usando
+npx create-react-app .
+npm start (o pnx start)
+npm install react-router-dom
+npm uninstall react-router-dom
+npm install react-router-dom@6
+(se corrompió)
+rd /s /q node_modules
+npm install
+npm install react-router-dom@6
+rfec (para empezar el componente)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
