@@ -1,0 +1,31 @@
+.mouse-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  font-family: Arial, sans-serif;
+}
+
+.mouse-box {
+  background-color: #4caf50;
+  color: white;
+  padding: 30px;
+  border-radius: 12px;
+  width: 220px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.mouse-box:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+.mouse-message {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
