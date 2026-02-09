@@ -2,7 +2,7 @@
 $color-fondo: #f5f2c0;
 $color-borde: #c1c1c1;
 $color-navegador: #c1c1c1;
-@import "imports";
+// @import "imports";
 
 @mixin padding-sides($pad-top,$pad-left,$pad-right,$pad-bot){
     padding-top: $pad-top;

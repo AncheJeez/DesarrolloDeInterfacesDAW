@@ -1,21 +1,3 @@
-.distribucion-lateral {
-  display: flex;
-  flex-wrap: nowrap;
-}
-.distribucion-lateral .mensajes {
-  background-color: #c1c1c1;
-  margin: 20px;
-  padding: 15px;
-  width: 20%;
-  height: 50%;
-}
-@media screen and (max-width: 680px) {
-  .distribucion-lateral .mensajes {
-    width: 85%;
-    text-align: center;
-  }
-}
-
 /*https://platzi.com/blog/como-usar-media-queries-en-sass/*/
 .bloque-titulo {
   background-color: #f5f2c0;
