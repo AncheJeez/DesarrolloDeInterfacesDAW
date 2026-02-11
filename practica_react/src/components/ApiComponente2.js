@@ -76,7 +76,7 @@ export default function ApiComponentePokemon(){
         AjaxComponente Pokemon
         <p>Listado de pokemon vía Ajax</p>
 
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "20px" }}>
+        <div className="main-container" style={{display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "20px"}}>
         {pokemons.map((pokemon, index) => {
             return (
                 <div key="pokemon.name"
@@ -86,6 +86,7 @@ export default function ApiComponentePokemon(){
                         borderRadius: "10px",
                         padding: "5px",
                         backgroundImage: `url(${pokemon.sprites.other["official-artwork"].front_default})`,
+                        backgroundColor: ""+typeColors[pokemon.types[0].type.name],
                         backgroundSize: "cover",
                         backgroundPosition: "center",
                         height: "250px",
@@ -95,7 +96,7 @@ export default function ApiComponentePokemon(){
                         textShadow: "1px 1px 3px black"
                     }}
                 >
-                    <p style={{color: typeColors[pokemon.types[0].type.name]}}>
+                    <p className="pokemon-name" style={{color: typeColors[pokemon.types[0].type.name]}}>
                         {pokemon.name.toUpperCase()}
                     </p>
                     <img
