@@ -1,0 +1,8 @@
+.container-footer{
+    background-color: rgb(41, 163, 59);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    .container-lowsize{
+        font-size: 0.8em;
+    }
+}

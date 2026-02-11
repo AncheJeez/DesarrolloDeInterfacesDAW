@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  /* min-height: 100%;
+  display: flex;
+  flex-direction: column; */
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -30,4 +33,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+main{
+  flex: 1;
 }
