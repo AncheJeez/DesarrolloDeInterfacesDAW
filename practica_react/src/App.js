@@ -9,29 +9,39 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 
 function App() {
+  const text1="Bienvenido a mi página usando React.";
+  const text2="Utilice el navegador para mostrar los distintos componentes.";
   return (
     <BrowserRouter>
       <div className="App">
-        <Header/>
-        <header className="App-header">
+        <div className="header">
+            <Header/>
+        </div>
+        <header className="Nav">
           <nav>
             <Link to="/">Home</Link> |{" "}
-            <Link to="/mibosque">MiBosque</Link> |{" "}
-            <Link to="/migatonaranja">MiGatoNaranja</Link> |{" "}
-            <Link to="/panel">Panel de Control</Link> |{" "}
-            <Link to="/eventomouse">Eventos de Ratón</Link>
+            <Link to="/panel_gatoarbol">ParamComponente</Link> |{" "}
+            <Link to="/panel_api">APIs</Link>
           </nav>
         </header>
         <main>
           <Routes>
-            <Route path="/" element={<div>Esto es una prueba de home page</div>} />
-            <Route path="/mibosque" element={<Micomponente type="forest" />} />
-            <Route path="/migatonaranja" element={<Micomponente type="orange_cat" />} />
-            <Route path="/panel" element={<PanelDeControl />}>
+            <Route path="/" element={<div>{text1}<br/>{text2}<br/><EventMouse/></div>} />
+
+
+            <Route path="panel_gatoarbol" element={<PanelDeControl type="treecat"/>}>
+              <Route path="MiBosque" element={<Micomponente type="forest" />} />
+              <Route path="MiGatoNaranja" element={<Micomponente type="orange_cat" />} />
+              <Route path="MiMountain" element={<Micomponente type="mountain" />} />
+            </Route>
+
+
+            <Route path="/panel_api" element={<PanelDeControl type="API"/>}>
               <Route path="api" element={<ApiComponente/>} />
               <Route path="api2" element={<ApiComponente2/>} />
             </Route>
-            <Route path="/eventomouse" element={<EventMouse/>} />
+
+
           </Routes>
         </main>
         <footer>
