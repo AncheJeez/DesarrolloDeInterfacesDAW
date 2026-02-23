@@ -1,12 +1,13 @@
 import './App.css';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-import Micomponente from './components/MiComponente';
-import ApiComponente from './components/ApiComponente';
-import EventMouse from './components/EventMouse';
-import ApiComponente2 from './components/ApiComponente2';
-import PanelDeControl from './components/PanelDeControl';
-import Header from './components/Header';
-import Footer from './components/Footer';
+import MostrarEjemplosClase from './components/router/mostrar_ejemplos_clase';
+import ComponenteParametro from './components/router/ComponenteParametro';
+import ApiComponente from './components/router/ApiComponente';
+import ApiComponente2 from './components/router/ApiComponente2';
+import PanelDeControl from './components/router/PanelDeControl';
+import Header from './components/main_page/Header';
+import Footer from './components/main_page/Footer';
+import HeaderNav from './components/main_page/HeaderNav';
 
 function App() {
   const text1="Bienvenido a mi página usando React.";
@@ -17,22 +18,22 @@ function App() {
         <div className="header">
             <Header/>
         </div>
-        <header className="Nav">
-          <nav>
-            <Link to="/">Home</Link> |{" "}
-            <Link to="/panel_gatoarbol">ParamComponente</Link> |{" "}
-            <Link to="/panel_api">APIs</Link>
-          </nav>
-        </header>
+        <HeaderNav />
         <main>
           <Routes>
-            <Route path="/" element={<div>{text1}<br/>{text2}<br/><EventMouse/></div>} />
+            
+            <Route path="/" element={
+              <div>
+                {text1}<br/>{text2}<br/>
+                <MostrarEjemplosClase/>
+              </div>
+            } />
 
 
             <Route path="panel_gatoarbol" element={<PanelDeControl type="treecat"/>}>
-              <Route path="MiBosque" element={<Micomponente type="forest" />} />
-              <Route path="MiGatoNaranja" element={<Micomponente type="orange_cat" />} />
-              <Route path="MiMountain" element={<Micomponente type="mountain" />} />
+              <Route path="MiBosque" element={<ComponenteParametro type="forest" />} />
+              <Route path="MiGatoNaranja" element={<ComponenteParametro type="orange_cat" />} />
+              <Route path="MiMountain" element={<ComponenteParametro type="mountain" />} />
             </Route>
 
 

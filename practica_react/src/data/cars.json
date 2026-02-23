@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "nombre": "Toyota Supra",
+        "descripcion": "Deportivo japonés famoso por su motor turbo y su presencia en el mundo del tuning."
+    },
+    {
+        "id": 2,
+        "nombre": "Ford Mustang",
+        "descripcion": "Muscle car estadounidense icónico, conocido por su potente motor V8."
+    },
+    {
+        "id": 3,
+        "nombre": "BMW M3",
+        "descripcion": "Sedán deportivo alemán que combina lujo, tecnología y alto rendimiento."
+    },
+    {
+        "id": 4,
+        "nombre": "Lamborghini Huracán",
+        "descripcion": "Superdeportivo italiano con diseño agresivo y motor V10 de alto rendimiento."
+    }
+]

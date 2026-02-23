@@ -7,7 +7,7 @@ function PanelDeControl({type}) {
 
     switch(type){
         case "API":
-            componentes.set("api", "API");
+            componentes.set("api", "API Usuarios");
             componentes.set("api2", "API Pokemon");
             break;
         default:
