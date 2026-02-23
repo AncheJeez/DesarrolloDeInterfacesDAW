@@ -8,6 +8,7 @@ import PanelDeControl from './components/router/PanelDeControl';
 import Header from './components/main_page/Header';
 import Footer from './components/main_page/Footer';
 import HeaderNav from './components/main_page/HeaderNav';
+import Contacto from "./components/router/Contacto";
 
 function App() {
   const text1="Bienvenido a mi página usando React.";
@@ -21,7 +22,10 @@ function App() {
         <HeaderNav />
         <main>
           <Routes>
-            
+
+            <Route path="/contacto" element={<Contacto />} />
+            <Route path="/contacto/:nombre/:email/:descripcion" element={<Contacto />} />
+
             <Route path="/" element={
               <div>
                 {text1}<br/>{text2}<br/>
